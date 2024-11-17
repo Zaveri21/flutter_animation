@@ -4,10 +4,10 @@ Effortlessly animate views or list items with the AnimationView kit by selecting
 
 <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"/></a>
 <a href="https://opensource.org/licenses/Apache-2.0" target="_blank"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102"/></a>
-<a href="https://github.com/Zaveri21/flutter_animation/issues" target="_blank">
-    <img alt="GitHub: Zaveri21" src="https://img.shields.io/github/issues-raw/Zaveri21/flutter_animation?style=flat" />
+<a href="https://github.com/Zaveri21/flutter_awesome_animations_kit/issues" target="_blank">
+    <img alt="GitHub: Zaveri21" src="https://img.shields.io/github/issues-raw/Zaveri21/flutter_awesome_animations_kit?style=flat" />
 </a>
-<img src="https://img.shields.io/github/last-commit/Zaveri21/flutter_animation" />
+<img src="https://img.shields.io/github/last-commit/Zaveri21/flutter_awesome_animations_kit" />
 
 ### AnimationView Features
 
@@ -25,8 +25,8 @@ Effortlessly animate views or list items with the AnimationView kit by selecting
 
 <table>
   <tr>
-    <td><img src="https://github.com/Zaveri21/flutter_animation/raw/main/gifs/animated_view.gif" alt="Animated View" width="300"></td>
-    <td><img src="https://github.com/Zaveri21/flutter_animation/raw/main/gifs/animated_text.gif" alt="Animated Text" width="300"></td>
+    <td><img src="https://github.com/Zaveri21/flutter_awesome_animations_kit/raw/main/gifs/animated_view.gif" alt="Animated View" width="300"></td>
+    <td><img src="https://github.com/Zaveri21/flutter_awesome_animations_kit/raw/main/gifs/animated_text.gif" alt="Animated Text" width="300"></td>
   </tr>
   <tr>
     <td align="center"><b>Animated View</b></td>
@@ -39,12 +39,12 @@ Effortlessly animate views or list items with the AnimationView kit by selecting
 Add this package to `pubspec.yaml` as follows:
 
 ```console
-$ flutter pub add flutter_animation
+$ flutter pub add flutter_awesome_animations_kit
 ```
 
 
 ```dart
-import import 'package:flutter_animation/flutter_animation.dart';
+import 'package:flutter_awesome_animations_kit/flutter_awesome_animations_kit.dart';
 ```
 
 ## Additional Information
@@ -186,7 +186,7 @@ class MyHomePage extends StatelessWidget {
 ```
 
 ## ⏳ Work-in-Progress (WIP)
-- 🖥️ Web support (WIP).
+- 🖥️ Web support (WIP) (Not tested on web platforms).
 
  ## Additional Information
 
@@ -198,8 +198,8 @@ Tell users more about the package: where to find more information, how to contri
 </a>
 
 ### GitHub
-<a href="https://github.com/Zaveri21/flutter_animation">
-  <img src="https://img.shields.io/github/stars/Zaveri21/flutter_animation?style=social" alt="GitHub Stars" />
+<a href="https://github.com/Zaveri21/flutter_awesome_animations_kit">
+  <img src="https://img.shields.io/github/stars/Zaveri21/flutter_awesome_animations_kit?style=social" alt="GitHub Stars" />
 </a>
 <a href="https://github.com/Zaveri21">
   <img src="https://img.shields.io/github/followers/Zaveri21?label=Follow&style=social" alt="GitHub Followers" />

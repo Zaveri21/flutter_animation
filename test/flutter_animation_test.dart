@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_animation/src/flutter_animated_text.dart';
+import 'package:flutter_awesome_animations_kit/src/flutter_animated_text.dart';
 
 void main() {
-  testWidgets('FlutterAnimatedText countUp animation', (WidgetTester tester) async {
+  testWidgets('FlutterAnimatedText countUp animation',
+      (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: Scaffold(
           body: FlutterAnimatedText(
@@ -27,12 +28,13 @@ void main() {
     expect(find.text('100'), findsOneWidget);
   });
 
-  testWidgets('FlutterAnimatedText countDown animation', (WidgetTester tester) async {
+  testWidgets('FlutterAnimatedText countDown animation',
+      (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: Scaffold(
           body: FlutterAnimatedText(
-        startValue: 100,
-        endValue: 0,
+        startValue: 0,
+        endValue: 100,
         animationType: TextAnimationType.countDown,
         duration: Duration(seconds: 1),
       )),
@@ -51,7 +53,8 @@ void main() {
     expect(find.text('0'), findsOneWidget);
   });
 
-  testWidgets('FlutterAnimatedText typing animation', (WidgetTester tester) async {
+  testWidgets('FlutterAnimatedText typing animation',
+      (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: Scaffold(
           body: FlutterAnimatedText(
@@ -74,7 +77,8 @@ void main() {
     expect(find.text('Hello'), findsOneWidget);
   });
 
-  testWidgets('FlutterAnimatedText none animation', (WidgetTester tester) async {
+  testWidgets('FlutterAnimatedText none animation',
+      (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: Scaffold(
           body: FlutterAnimatedText(
@@ -83,7 +87,8 @@ void main() {
       )),
     ));
 
-    await tester.pumpAndSettle(); // No animation but wait for the widget to render
+    await tester
+        .pumpAndSettle(); // No animation but wait for the widget to render
 
     expect(find.text('Static Text'), findsOneWidget); // Static text
   });

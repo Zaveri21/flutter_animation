@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation/flutter_animation.dart';
+import 'package:flutter_awesome_animations_kit/flutter_awesome_animations_kit.dart';
 
 void main() {
   runApp(const MyApp());
@@ -139,7 +139,8 @@ class _ListViewScreenState extends State<ListViewScreen> {
               index: index,
               child: Card(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
                   child: Column(
                     children: [
                       Row(

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('App initializes correctly and navigates to ListViewScreen', (WidgetTester tester) async {
+  testWidgets('App initializes correctly and navigates to ListViewScreen',
+      (WidgetTester tester) async {
     // Build the app
     await tester.pumpWidget(const MyApp());
 

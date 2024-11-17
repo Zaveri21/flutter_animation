@@ -30,7 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_animation: 
+  flutter_awesome_animations_kit: 
     path: ../
 
 

@@ -49,7 +49,8 @@ class FlutterAnimatedText extends StatefulWidget {
   FlutterAnimatedTextState createState() => FlutterAnimatedTextState();
 }
 
-class FlutterAnimatedTextState extends State<FlutterAnimatedText> with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
+class FlutterAnimatedTextState extends State<FlutterAnimatedText>
+    with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
   late AnimationController _controller;
   late Animation<double>? _countAnimation;
   late Animation<double>? _typingAnimation;
@@ -86,7 +87,8 @@ class FlutterAnimatedTextState extends State<FlutterAnimatedText> with SingleTic
           animation: _countAnimation!,
           builder: (context, child) {
             return Text(
-              _countAnimation!.value.toStringAsFixed(widget.precision), // Display as integer
+              _countAnimation!.value
+                  .toStringAsFixed(widget.precision), // Display as integer
               style: widget.style,
             );
           },
@@ -105,7 +107,8 @@ class FlutterAnimatedTextState extends State<FlutterAnimatedText> with SingleTic
           animation: _countAnimation!,
           builder: (context, child) {
             return Text(
-              _countAnimation!.value.toStringAsFixed(widget.precision), // Display as integer
+              _countAnimation!.value
+                  .toStringAsFixed(widget.precision), // Display as integer
               style: widget.style,
             );
           },
@@ -147,7 +150,8 @@ class FlutterAnimatedTextState extends State<FlutterAnimatedText> with SingleTic
   void didUpdateWidget(covariant FlutterAnimatedText oldWidget) {
     super.didUpdateWidget(oldWidget);
 
-    if (widget.animationType != oldWidget.animationType || widget.repeatMode != oldWidget.repeatMode) {
+    if (widget.animationType != oldWidget.animationType ||
+        widget.repeatMode != oldWidget.repeatMode) {
       _controller.reset();
       _initializeAnimations();
       _startAnimation();

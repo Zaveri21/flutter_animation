@@ -49,7 +49,8 @@ class FlutterAnimatedView extends StatefulWidget {
   FlutterAnimatedViewState createState() => FlutterAnimatedViewState();
 }
 
-class FlutterAnimatedViewState extends State<FlutterAnimatedView> with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
+class FlutterAnimatedViewState extends State<FlutterAnimatedView>
+    with SingleTickerProviderStateMixin, AutomaticKeepAliveClientMixin {
   late AnimationController _controller;
   Animation<double>? _fadeAnimation;
   Animation<double>? _scaleAnimation;
@@ -57,7 +58,8 @@ class FlutterAnimatedViewState extends State<FlutterAnimatedView> with SingleTic
   Animation<Offset>? _slideUpAnimation;
   Animation<double>? _flipAnimation;
   Animation<double>? _bounceAnimation;
-  bool isAnimationOn = true; // ANIMATION REMOVE FROM ENTER APP WHERE WIDGET USED.
+  bool isAnimationOn =
+      true; // ANIMATION REMOVE FROM ENTER APP WHERE WIDGET USED.
 
   // bool _hasAnimated = false;
   bool _wantKeepAlive = false;
@@ -203,7 +205,10 @@ class FlutterAnimatedViewState extends State<FlutterAnimatedView> with SingleTic
 
     // Start animation only once per item load
     //if (!_hasAnimated) {
-    Timer(widget.index != null ? Duration(milliseconds: (100 * ((widget.index ?? 0) % 12))) : widget.delayBetweenAnimation, () async {
+    Timer(
+        widget.index != null
+            ? Duration(milliseconds: (100 * ((widget.index ?? 0) % 12)))
+            : widget.delayBetweenAnimation, () async {
       _controller.forward();
 
       // _hasAnimated = true;

@@ -1,10 +1,11 @@
-name: flutter_animation
-description: "Effortlessly animate views or list items with AnimationView by selecting an animation type. Options include: none, fadeIn, scale, slideRTL, slideLTR, slideUp, flip, bounce, scaleLTR, scaleCenterZoomOut. Enhance your UI seamlessly! 🚀✨"
-version: 0.0.1
-homepage: https://github.com/Zaveri21/flutter_animation
-repository: https://github.com/Zaveri21/flutter_animation
-issue_tracker: https://github.com/Zaveri21/flutter_animation/issues
-
+name: flutter_awesome_animations_kit
+description: "Effortlessly animate views or list items with AnimationView by selecting an animation type. Options include: none, fadeIn, scale, slideRTL, slideLTR, slideUp, flip, bounce, scaleLTR, scaleCenterZoomOut. Enhance your UI seamlessly!"
+version: 0.0.3
+homepage: https://github.com/Zaveri21/flutter_awesome_animations_kit
+repository: https://github.com/Zaveri21/flutter_awesome_animations_kit
+issue_tracker: https://github.com/Zaveri21/flutter_awesome_animations_kit/issues
+  
+  
 environment:
   sdk: ">=2.18.6 <4.0.0"
   #sdk: ^3.5.0
@@ -23,6 +24,7 @@ dev_dependencies:
 platforms:
   android:
   ios:
+  web:
 
 funding:
   - https://buymeacoffee.com/vishaljhaveri
